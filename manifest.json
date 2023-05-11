@@ -1,0 +1,26 @@
+{
+    "name": "code compiler",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Compile code online for free! Supports multiple languages and libraries. No setup needed. Chrome extension. Powered by RealBrain.",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts allow-forms",
+        "script-src": [
+            "'self'",
+            "https://cdnjs.cloudflare.com"
+        ]
+    }
+}
